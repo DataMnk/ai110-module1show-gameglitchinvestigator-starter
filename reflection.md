@@ -5,8 +5,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+  The first time I ran the game it looked functional — it showed 
+  a number input field, a Submit Guess button, and a difficulty 
+  selector. However, after playing a couple of rounds I started 
+  noticing the bugs described below.
+
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+  - Bug 1: The hints were backwards. When I guessed higher 
+    than the secret number, it said "Go Higher" instead of 
+    "Go Lower".
+  - Bug 2: The score was inconsistent. The debug info showed 
+    score: 5 during the game but the final score displayed was 45.
+  - Bug 3: The game allowed one extra guess after winning. 
+    The input field stayed active after the correct answer, 
+    letting me submit 52 even though I had already won.
 
 ---
 
