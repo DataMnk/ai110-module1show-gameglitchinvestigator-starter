@@ -25,13 +25,23 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+## 📝 Document Your Experience
+
+- [x] **Game purpose:** A number guessing game where the player tries to guess a secret number within a limited number of attempts. The app gives hints after each guess to guide the player.
+
+- [x] **Bugs found:**
+  - Hints were backwards (Go Higher when it should say Go Lower)
+  - Score was inconsistent between debug info and final display
+  - Game allowed one extra guess after winning
+
+- [x] **Fixes applied:**
+  - Fixed check_guess logic in logic_utils.py to return correct hints
+  - Fixed update_score to consistently subtract 5 points per wrong guess
+  - Added pytest test to verify hint logic works correctly
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+![Winning game screenshot](docs/demo.png)
 
 ## 🚀 Stretch Features
 
